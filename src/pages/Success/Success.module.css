@@ -1,0 +1,50 @@
+.successBox {
+  background-color: var(--color-white);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.successCheck {
+  width: 15%;
+  margin-top: 8rem;
+}
+
+@media screen and (min-width: 575px) {
+  .successBox {
+    background-color: var(--color-white);
+    padding: 2rem;
+    border-radius: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 25%;
+    min-width: 350px;
+    transform: translate(-50%, -50%);
+    height: auto;
+  }
+  .successCheck {
+    width: 15%;
+    margin-top: 0;
+  }
+}
+
+.successText {
+  color: var(--color-dark-slate-grey);
+}
+
+.successButton {
+  width: 100%;
+  background-color: var(--color-dark-slate-grey);
+  padding: 1rem;
+  color: var(--color-white);
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+}
+
+.successButton:hover {
+  background-color: var(--color-primary);
+}

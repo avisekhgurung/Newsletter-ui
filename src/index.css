@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+  --color-primary: hsl(4, 100%, 67%);
+  --color-dark-slate-grey: hsl(234, 29%, 20%);
+  --color-charcoal-grey: hsl(235, 18%, 26%);
+  --color-grey: hsl(231, 7%, 60%);
+  --color-white: hsl(0, 0%, 100%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--color-charcoal-grey);
+}
+
+.sign-up {
+  background-color: var(--color-white);
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 2rem;
+}
+
+.sign-up-content {
+  padding: 1rem 2rem;
+}
+
+.sign-up-image {
+  display: none;
+}
+
+.sign-up-image-mobile {
+  display: flex;
+  justify-content: center;
+}
+
+.sign-up-image-mobile img {
+  width: 100%;
+  margin-top: -5rem;
+}
+
+@media screen and (min-width: 575px) {
+  /* CSS code for large screen */
+  .sign-up{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    justify-content: center;
+    width: 80%;
+    min-width: 750px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    padding: 1rem;
+  }
+
+  .sign-up-content {
+    width: 50%;
+    margin-top: 3rem;
+    margin-left: 2rem;
+  }
+  
+  .sign-up-image {
+    background-image: url('/images/illustration-sign-up-desktop.svg');
+    background-size: cover;
+    width: 50%;
+    border-radius: 10px;
+    display: block;
+  }
+
+  .sign-up-image-mobile {
+    display: none;
+  }
+}
+
+
+.text{
+  color: var(--color-dark-slate-grey);
+  font-size: 1.2rem;
+}
+
+.heading { 
+  color: var(--color-dark-slate-grey);
+  font-size: 2.5rem;
+}
+
+.mt-1 {
+ margin-top: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem
+}
+
+.mb-1 {
+  margin-bottom:  1rem;
+}
+
+.error {
+  color: red;
+}
+
+.label {
+  display: flex;
+  justify-content: space-between;
+}
