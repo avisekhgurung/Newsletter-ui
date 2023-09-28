@@ -67,7 +67,7 @@ body {
   }
   
   .sign-up-image {
-    background-image: url('/images/illustration-sign-up-desktop.svg');
+    background-image: url('/src/assets/images/sign-up-image-desktop.svg');
     background-size: cover;
     width: 50%;
     border-radius: 10px;
